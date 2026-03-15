@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>send your message</title>
+    <link rel="stylesheet" href="thankyou.css">
+</head>
+
+<body>
+    <section class="contact">
+        <h2>Leave a Message</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="82826bc3-6d06-4cc6-b8b7-a1658129f77a">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Submit Message</button>
+        </form>
+    </section>
+    <a href="index.html" class="back-home">Go back home</a>
+</body>
+
+</html>

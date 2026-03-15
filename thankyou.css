@@ -1,0 +1,122 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #390517;
+    color: #E0E0E0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    color: #00ff9d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00cc7d;
+}
+
+/* Contact Section */
+.contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.contact form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 255, 157, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.contact input,
+.contact textarea {
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    resize: vertical;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #00ff9d;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 157, 0.3);
+}
+
+.contact button {
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: #00ff9d;
+    color: #0d0d0d;
+    transition: all 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #00cc7d;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 255, 157, 0.2);
+}
+
+/* Go Back Link */
+.contact+a {
+    display: inline-block;
+    margin: 40px auto 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #00ff9d;
+    padding-bottom: 2px;
+}
+
+.contact+a:hover {
+    color: #00cc7d;
+    border-color: #00cc7d;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact form {
+        padding: 30px 20px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+}
